@@ -240,10 +240,11 @@ main > section {
   position: fixed;
   width: 100%;
   bottom: -100%;
+  background-color: var(--light);
   transition: bottom 0.3s ease-in-out;
 }
-.footer .active {
-  bottom: 0;
+.footer.active {
+  bottom: 0%;
 }
 .footer .container {
   display: grid;
@@ -293,8 +294,17 @@ main > section {
 .social-nav a[href*="instagram.com"]::before {
   content: "\f16d";
 }
-.social-nav a[href="twitter.com"]::before {
-  content: "\f099";
+.social-nav a[href*="blogger.com"]::before {
+  content: "\f37c";
+}
+.social-nav a[href*="pintrest.com"]::before {
+  content: "\f0d3";
+}
+.social-nav a[href*="youtube.com"]::before {
+  content: "\f431";
+}
+.social-nav a[href*="twitter.com"]::before {
+  content: "\f081";
 }
 .social-nav a span {
   display: none;

@@ -6,19 +6,16 @@ const floatingBTN = document.querySelector(".footerBtn");
 floatingBTN.addEventListener("click", e => {
   //select footer
   const footer = document.querySelector(".footer");
-
-  //check if class exists (active) then remove
-  if ((footer, classList.contains("active"))) {
+  //add active class to footer
+  if (footer.classList.contains("active")) {
     //remove class
     footer.classList.remove("active");
-
     //return original text
     e.target.innerText = "Terms, Privacy, Currency";
   } else {
-    //add active class into footer
+    //add active class to footer
     footer.classList.add("active");
-
-    //add the close text
+    //add close text
     e.target.innerText = "X Close";
   }
 });
